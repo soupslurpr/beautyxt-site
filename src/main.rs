@@ -436,7 +436,7 @@ fn main() {
                                     Text::new("."),
                                     Br::new(vec![]),
                                     Br::new(vec![]),
-                                    Text::new("Please note that if you want to report an issue or feature, you can do so through the "),
+                                    Text::new("Please note that if you want to report an issue or suggest a feature, you can do so through the "),
                                     anchor_with_href_and_text("https://github.com/soupslurpr/BeauTyXT/issues", "issue tracker"),
                                     Text::new(" on GitHub.")
                                 ]
