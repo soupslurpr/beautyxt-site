@@ -555,7 +555,7 @@ THE SOFTWARE.
         }
     ];
 
-    match create_dir("site") {
+    match create_dir("docs") {
         Ok(_) => (),
         Err(e) => {
             if e.raw_os_error() != Some(183) {
@@ -758,7 +758,7 @@ THE SOFTWARE.
             ],
         )]);
 
-        match create_dir(format!("site{}", &ucp.href)) {
+        match create_dir(format!("docs{}", &ucp.href)) {
             Ok(_) => (),
             Err(e) => {
                 if e.raw_os_error() != Some(183) {
@@ -766,7 +766,7 @@ THE SOFTWARE.
                 }
             }
         }
-        let mut file = File::create(format!("site{}index.html", &ucp.href)).unwrap();
+        let mut file = File::create(format!("docs{}index.html", &ucp.href)).unwrap();
         file.write_all(page.to_html().as_bytes()).unwrap();
     }
 }
