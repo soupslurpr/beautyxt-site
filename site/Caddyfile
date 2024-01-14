@@ -1,0 +1,9 @@
+# for testing purposes only
+
+:80 {
+	header Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+	header Pragma "no-cache"
+	header Expires "-1"
+
+	file_server
+}
