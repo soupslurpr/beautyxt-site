@@ -572,7 +572,7 @@ THE SOFTWARE.
     }
 
     for ucp in pages.into_iter() {
-        let page = Page::new(vec![Html::new(
+        let page = Page::new(vec![Text::new("<!DOCTYPE html>\n"), Html::new(
             vec![Lang::new("en"), Prefix::new("og: https://ogp.me/ns#")],
             vec![
                 Head::new(
