@@ -219,7 +219,7 @@ fn main() {
                                                         by tapping on the info icon while a file is open."
                                                     ),
                                                     feature_list_item(
-                                                        Text::new("Export options"),
+                                                        "Export options",
                                                         P::new(
                                                             vec![], 
                                                             vec![

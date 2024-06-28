@@ -1,21 +1,32 @@
 use std::rc::Rc;
 
 use cool_site_builder::{
-    elements::{details::Details, li::Li, p::P, strong::Strong, summary::Summary, text::Text},
-    Element,
+    attributes::{href::Href, id::Id, open::Open},
+    elements::{
+        a::A, details::Details, li::Li, p::P, strong::Strong, summary::Summary, text::Text,
+    },
 };
 
 pub fn simple_feature_list_item(summary: &str, details: &str) -> Rc<Li> {
-    feature_list_item(Text::new(summary), P::new(vec![], vec![Text::new(details)]))
+    feature_list_item(summary, P::new(vec![], vec![Text::new(details)]))
 }
 
-pub fn feature_list_item(summary: Rc<dyn Element>, details: Rc<P>) -> Rc<Li> {
+pub fn feature_list_item(summary: &str, details: Rc<P>) -> Rc<Li> {
     Li::new(
-        vec![],
+        vec![Id::new(summary)],
         vec![Details::new(
-            vec![],
+            vec![Open::new()],
             vec![
-                Summary::new(vec![], vec![Strong::new(vec![], vec![summary])]),
+                Summary::new(
+                    vec![],
+                    vec![Strong::new(
+                        vec![],
+                        vec![A::new(
+                            vec![Href::new(&format!("#{}", summary))],
+                            vec![Text::new(summary)],
+                        )],
+                    )],
+                ),
                 details,
             ],
         )],

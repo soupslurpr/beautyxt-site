@@ -30,7 +30,7 @@ html {
     text-decoration: underline;
   }
   
-  h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
+  summary a, summary a:visited, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
     color: #1a1b20; /* 87% black */
   }
   
@@ -339,7 +339,7 @@ html {
         color: #ce93d8; /* purple200 */
     }
   
-    p, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
+    summary a, summary a:visited, p, h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited, h5 a, h5 a:visited, h6 a, h6 a:visited {
         color: #e2e2e9; /*  */
     }
   
