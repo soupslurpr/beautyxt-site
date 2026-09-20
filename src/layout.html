@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website privacy | BeauTyXT</title>
-  <meta name="description" content="How the BeauTyXT website handles privacy, hosting, and external links.">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f6f8f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#111a19" media="(prefers-color-scheme: dark)">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
-
-  <link rel="canonical" href="https://beautyxt.app/website-privacy-policy/">
+{{robots}}
+  <link rel="canonical" href="{{canonical}}">
   <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="icon" href="/assets/icon.webp" type="image/webp" sizes="308x308">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -19,9 +19,9 @@
   <link rel="license" href="/LICENSE">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="BeauTyXT">
-  <meta property="og:title" content="Website privacy | BeauTyXT">
-  <meta property="og:description" content="How the BeauTyXT website handles privacy, hosting, and external links.">
-  <meta property="og:url" content="https://beautyxt.app/website-privacy-policy/">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="{{canonical}}">
   <meta property="og:image" content="https://beautyxt.app/opengraph.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -32,7 +32,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="navigation page-width" aria-label="Main navigation">
-      <a class="wordmark" href="/">
+      <a class="wordmark" href="/"{{home_current}}>
         <img class="app-icon" src="/assets/icon.webp" width="44" height="44" alt="">
         <span>BeauTyXT</span>
       </a>
@@ -45,17 +45,7 @@
     </nav>
   </header>
   <main id="main" tabindex="-1">
-    <article class="document page-width">
-      <a class="back-link" href="/">← BeauTyXT</a>
-      <p class="eyebrow">The website, specifically</p>
-      <h1>Website privacy</h1>
-      <p class="document-lead">This page describes the website. For the Android app, see <a href="/#privacy">files and privacy</a>.</p>
-      <section><h2>No analytics or embedded services</h2><p>This site contains no JavaScript, analytics, tracking pixels, or advertising. It doesn’t set cookies or use local storage. Images and styles are served from this site; fonts use what’s already installed on your device.</p></section>
-      <section><h2>Hosting</h2><p>The published website is hosted on <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages</a>. GitHub receives requests needed to serve the site and logs visitors’ IP addresses for security purposes, as described in its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p></section>
-      <section id="links-to-other-sites"><h2>External links</h2><p>Links to GitHub, Accrescent, Matrix, and other websites take you to services with their own privacy policies. Those services are not embedded in this page. This website asks browsers not to send a referrer when following links.</p></section>
-      <section><h2>Questions</h2><p>You can <a href="/contact/">contact the developer</a> with questions about this website.</p></section>
-    </article>
-
+{{content}}
   </main>
   <footer class="site-footer page-width">
     <div class="footer-top">
@@ -69,7 +59,7 @@
       <nav class="footer-links" aria-label="More about BeauTyXT">
         <a href="https://matrix.to/#/#beautyxt-space:matrix.org">Matrix</a>
         <a href="https://github.com/soupslurpr/BeauTyXT">App source</a>
-        <a href="/contact/">Contact</a>
+        <a href="/contact/"{{contact_current}}>Contact</a>
         <a href="/LICENSE">License</a>
         <a href="/website-privacy-policy/">Website privacy</a>
       </nav>
