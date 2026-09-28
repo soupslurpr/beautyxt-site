@@ -72,9 +72,9 @@
     </section>
 
     <aside class="release-strip page-width" aria-label="Latest release">
-      <span class="release-tag">Reimagined</span>
-      <p>Rebuilt from the ground up. Ready for your next document.</p>
-      <a href="https://github.com/soupslurpr/BeauTyXT/releases/tag/84">What’s new in 84 <span aria-hidden="true">↗</span></a>
+      <span class="release-tag">Version 85</span>
+      <p>Better search, clearer sharing, and room for larger pastes.</p>
+      <a href="https://github.com/soupslurpr/BeauTyXT/releases/tag/85">What’s new in 85 <span aria-hidden="true">↗</span></a>
     </aside>
 
     <section class="section page-width" id="features" aria-labelledby="features-title">
@@ -91,7 +91,7 @@
           <div class="feature-copy">
             <span class="feature-number" aria-hidden="true">01 / Read</span>
             <h3>Let the document<br>do the talking.</h3>
-            <p>Tables, checklists, code, footnotes, and supported math and diagrams. Markdown rendered natively, with no browser or JavaScript.</p>
+            <p>Tables, checklists, code, footnotes, and supported math and diagrams. Markdown rendered natively, with no browser or JavaScript. Select a passage to copy or share.</p>
             <a class="text-link" href="https://github.com/soupslurpr/BeauTyXT/blob/main/docs/native-illustrations.md">Math &amp; diagram support <span aria-hidden="true">↗</span></a>
           </div>
           <figure class="detail-shot">
@@ -106,7 +106,7 @@
           <div class="feature-copy">
             <span class="feature-number" aria-hidden="true">02 / Edit</span>
             <h3>Keep your place.<br>Find your flow.</h3>
-            <p>Move between reading and source editing without starting over. Find across the whole document, undo a change, or jump to a line—even in large files.</p>
+            <p>Find every match and review replacements before applying them. Undo a batch or a large paste in one step, and keep your place as you move between reading and editing.</p>
           </div>
           <figure class="detail-shot">
             <picture>
@@ -120,15 +120,15 @@
           <div class="feature-copy">
             <span class="feature-number" aria-hidden="true">03 / Share</span>
             <h3>Good text travels.</h3>
-            <p>Send a file or a little text. Show a QR code, write an NFC tag, or print a carefully laid-out PDF. No BeauTyXT account needed at either end.</p>
+            <p>Preview a document or selected passage, then share it or save a copy as source, Markdown, readable text, or PDF. QR codes, NFC tags, and Android printing are close at hand.</p>
             <ul class="feature-list">
-              <li>Android sharing</li><li>QR &amp; NFC</li><li>Formatted printing &amp; PDF</li>
+              <li>Preview &amp; export</li><li>QR &amp; NFC</li><li>Direct PDF sharing</li>
             </ul>
           </div>
           <div class="sharing-mark" aria-hidden="true"><span>.txt</span><span class="sharing-arrow">↗</span><span>.md</span></div>
         </article>
       </div>
-      <p class="screenshot-note">Real app screenshots. Colors follow your Android theme. <a href="/samples/field-notes.md" download>Try the sample document</a>.</p>
+      <p class="screenshot-note">Real screenshots from version 85. Colors follow your Android theme. <a href="/samples/field-notes.md" download>Try the sample document</a>.</p>
     </section>
 
     <section class="privacy-section page-width" id="privacy" aria-labelledby="privacy-title">
@@ -162,7 +162,11 @@
         </details>
         <details>
           <summary>How does saving work?</summary>
-          <div class="details-body"><p>Compatible source files save automatically after edits. If a storage provider cannot support verified saving, the file opens view-only; <strong>Save as editable</strong> creates a compatible source without changing the original.</p><p>New documents and received text remain in memory until you save. There are no private backup or recovery files. Unsaved content is lost if you close its session or Android ends the app process.</p><p>BeauTyXT checks the source before and after saving and reports conflicts or uncertain writes. Storage providers don’t universally support atomic writes: another app can race a save, and an interrupted write can leave a file incomplete.</p></div>
+          <div class="details-body"><p>Compatible source files save automatically after edits. If a storage provider cannot support verified saving, the file opens view-only; <strong>Save as editable</strong> creates a compatible source without changing the original.</p><p>For a new document, <strong>Save</strong> creates its own editable file. <strong>Save a copy</strong> in Send &amp; export saves the output you have previewed, such as a PDF or a selected passage.</p><p>New documents and received text remain in memory until you save. There are no private backup or recovery files. Unsaved content is lost if you close its session or Android ends the app process.</p><p>BeauTyXT checks the source before and after saving and reports conflicts or uncertain writes. Storage providers don’t universally support atomic writes: another app can race a save, and an interrupted write can leave a file incomplete.</p></div>
+        </details>
+        <details>
+          <summary>How do Find, Replace, and Undo work?</summary>
+          <div class="details-body"><p>Find highlights matches across the whole document. Choose case-sensitive, whole-word, or regular-expression searches, and browse results with surrounding text. Review replacements and exclude individual matches before applying a batch; <strong>Undo replacement</strong> reverses the applied change.</p><p>Large pastes stay a single undoable edit. Undo and Redo share the underlying text to use less memory, though very large edits still have memory limits. Sessions and undo history exist only while the app process keeps them open.</p></div>
         </details>
         <details>
           <summary>Can I read something shared from an AI assistant?</summary>
@@ -170,7 +174,7 @@
         </details>
         <details>
           <summary>What can I share or print?</summary>
-          <div class="details-body"><p>Share saved files through their existing provider, or share up to <strong>128 KiB</strong> of UTF-8 text directly. QR transfers accept up to <strong>1,536 UTF-8 bytes</strong>; NFC messages up to <strong>256 KiB</strong>, with writes also limited by the tag’s capacity. QR images can be saved as lossless WebP or PNG.</p><p>Print source text or formatted Markdown, including supported math and diagrams, or choose <strong>Save as PDF</strong> in Android’s print dialog. Adjust each margin, font and size, filename header, and page numbers. PDFs have selectable text and basic structure, but not full PDF/UA accessibility.</p></div>
+          <div class="details-body"><p><strong>Send &amp; export</strong> previews a whole document or selection as source, Markdown, readable text, or PDF. Each format explains what it preserves or changes. Share the reviewed output or use <strong>Save a copy</strong> to keep it.</p><p>PDFs can contain source text or formatted Markdown, including supported math and diagrams. Share the PDF directly, save it to a chosen provider, or open Android’s print screen. Adjust paper size, margins, font and size, filename header, and page numbers. PDFs preserve supported document links and provide selectable text and basic structure, but not full PDF/UA accessibility.</p><p>Share saved files through their existing provider, or share up to <strong>128 KiB</strong> of UTF-8 text directly. QR transfers accept up to <strong>1,536 UTF-8 bytes</strong>; NFC messages up to <strong>256 KiB</strong>, with writes also limited by the tag’s capacity. QR images can be saved as lossless WebP or PNG.</p></div>
         </details>
         <details>
           <summary>Which permissions does it use?</summary>
