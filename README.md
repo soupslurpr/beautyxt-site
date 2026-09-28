@@ -37,7 +37,7 @@ color schemes, keyboard navigation, expanded disclosures, and local links
 before publishing. The production app's README and architecture documents are
 the source of truth for feature and privacy claims.
 
-Screenshots show release 84 in an Android 17 emulator using the sample document
+Screenshots show release 85 in an Android 17 emulator using the sample document
 in `docs/samples/`. They are lossless WebP captures of the actual app with a
 normalized status bar, not rendered mockups. The 1080 × 2424 and 2160 × 4848
 versions are separate native captures; the larger versions double emulator
